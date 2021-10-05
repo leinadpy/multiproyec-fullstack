@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(
   session({
-    secret: "secret2021",
+    secret: "secret",
     resave: true,
     saveUninitialized: true,
   })
@@ -34,6 +34,7 @@ app.use((req, res, next) => {
 
 // Routes
 app.use(require("./routes/perfiles.routes"));
+app.use(require("./routes/perfilesxkg.routes"));
 app.use(require("./routes/users.routes"));
 app.use(require("./routes/accesorios.routes"));
 app.use(require("./routes/vidrios.routes"));

@@ -1,7 +1,7 @@
 {
-  "name": "multiproyec-backend",
+  "name": "backend_multiproyec",
   "version": "1.0.0",
-  "description": "",
+  "description": "Servicio de backend para cálculo de aberturas",
   "main": "src/index.js",
   "scripts": {
     "start": "node /app/src/index.js",
@@ -12,16 +12,18 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "express-session": "^1.17.2",
-    "mongoose": "^5.13.2",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.10.6",
     "morgan": "^1.10.0",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
-    "dotenv": "^10.0.0",
-    "nodemon": "^2.0.12"
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4",
+    "npm-check-updates": "^9.0.2"
   }
 }
